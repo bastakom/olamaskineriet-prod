@@ -45,10 +45,18 @@ export const Sublime = ({ blok }: SublimeProps) => {
         <div>
           <div className="sublime p-6 ">{render(info_content)}</div>
           <div className="lg:flex border-t-2 p-4 lg:p-0 lg:mx-4">
-            <div className="lg:border-r-2 lg:p-4 sublime">
+            <div
+              className={` lg:border-r-2 lg:p-4 sublime ${
+                !sublime ? "lg:w-[50%]" : "lg:w-[40%]"
+              }`}
+            >
               {render(email_contact)}
             </div>
-            <div className="lg:border-r-2 lg:p-4 sublime">
+            <div
+              className={`${
+                sublime ? "lg:border-r-2 lg:p-4 sublime" : "hidden"
+              }`}
+            >
               <div className="text-black lg:text-white pt-4 lg:pt-0">
                 {sublime}
               </div>
@@ -57,7 +65,11 @@ export const Sublime = ({ blok }: SublimeProps) => {
                 {render(email_sublime)}
               </div>
             </div>
-            <div className="flex lg:justify-center items-center gap-4 mx-auto ">
+            <div
+              className={` flex lg:justify-center items-center gap-4 mx-auto  ${
+                sublime ? "mt-0" : "mt-4 lg:mt-0"
+              }`}
+            >
               <Link href={fb_link.cached_url}>
                 <FaFacebook
                   fontSize={30}

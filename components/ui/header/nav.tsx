@@ -45,10 +45,16 @@ export const Nav = ({ settings }: Navprops) => {
         </div>
 
         <div className="flex z-20 fixed top-0 lg:static w-full justify-center lg:justify-end bg-white lg:bg-transparent">
-          <div className="button z-10" onClick={() => handleOnClickSound()}>
+          <div
+            className="button z-10 flex justify-center items-center"
+            onClick={() => handleOnClickSound()}
+          >
             {soundOpen ? <div>Stäng</div> : <div>{content.podd_link}</div>}
           </div>
-          <div className="button" onClick={() => handleOnClickLive()}>
+          <div
+            className="button flex justify-center items-center"
+            onClick={() => handleOnClickLive()}
+          >
             {liveOpen ? <div>Stäng</div> : <div>{content.live_link}</div>}
           </div>
         </div>
