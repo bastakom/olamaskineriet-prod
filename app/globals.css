@@ -17,7 +17,8 @@
  
 }
 
-.sound-container{
+
+.sound-container, .iframe-container {
   background-color: rgb(39 39 42);
   
 }
