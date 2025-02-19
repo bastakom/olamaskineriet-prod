@@ -40,13 +40,15 @@ export const Sublime = ({ blok }: SublimeProps) => {
       }`}
     >
       <div
-        className={`lg:absolute lg:bottom-24 lg:left-6 text-white lg:w-[50%]  lg:rounded-lg  lg:pb-0 sublime-container `}
+        className={`lg:absolute lg:bottom-24 lg:left-6 text-white lg:w-[50%] lg:rounded-lg lg:pb-0`}
       >
-        <div>
+        <div className="absolute w-full lg:h-full sublime-bg opacity-80 lg:rounded-lg"></div>
+
+        <div className="relative z-10">
           <div className="sublime p-6 ">{render(info_content)}</div>
           <div className="lg:flex border-t-2 p-4 lg:p-0 lg:mx-4">
             <div
-              className={` lg:border-r-2 lg:p-4 sublime ${
+              className={`lg:border-r-2 lg:p-4 sublime ${
                 !sublime ? "lg:w-[50%]" : "lg:w-[40%]"
               }`}
             >
@@ -66,7 +68,7 @@ export const Sublime = ({ blok }: SublimeProps) => {
               </div>
             </div>
             <div
-              className={` flex lg:justify-center items-center gap-4 mx-auto  ${
+              className={`flex lg:justify-center items-center gap-4 mx-auto ${
                 sublime ? "mt-0" : "mt-4 lg:mt-0"
               }`}
             >
