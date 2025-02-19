@@ -30,7 +30,7 @@ export const SoundComponent = ({ settings }: SoundProps) => {
     <div
       className={`transition-opacity delay-500 animate-fade-right opacity-0 ${
         soundOpen &&
-        "sound-container overflow-auto lg:overflow-hidden top-0 fixed mx-auto h-screen z-20 w-[100%] p-4 opacity-95 lg:opacity-80 pb-20 lg:pb-0"
+        "sound-container overflow-auto lg:overflow-hidden top-0 fixed mx-auto h-screen z-20 w-[100%] p-4 opacity-100 lg:opacity-90 pb-20 lg:pb-0"
       }`}
     >
       {soundOpen && (
