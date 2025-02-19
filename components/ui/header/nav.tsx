@@ -34,7 +34,7 @@ export const Nav = ({ settings }: Navprops) => {
 
   return (
     <header className="absolute top-0 w-[100%] h-[100vh] mt-16 lg:mt-0">
-      <nav className="lg:flex justify-between w-full ">
+      <nav className="lg:flex justify-between w-full">
         <div className="lg:w-[350px] h-[10vh] relative">
           <Image
             src={content.logo.filename}
@@ -44,7 +44,7 @@ export const Nav = ({ settings }: Navprops) => {
           />
         </div>
 
-        <div className="flex z-20 fixed top-0 lg:static w-full justify-center lg:justify-end bg-white lg:bg-transparent">
+        <div className="flex z-40 fixed top-0 lg:static w-full justify-center lg:justify-end bg-white lg:bg-transparent">
           <div
             className="button z-10 flex justify-center items-center"
             onClick={() => handleOnClickSound()}

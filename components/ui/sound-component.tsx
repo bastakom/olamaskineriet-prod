@@ -30,11 +30,11 @@ export const SoundComponent = ({ settings }: SoundProps) => {
     <div
       className={`transition-opacity delay-500 animate-fade-right opacity-0 ${
         soundOpen &&
-        "sound-container overflow-auto lg:overflow-hidden top-0 fixed mx-auto h-screen z-10 w-[100%] p-4 opacity-95 lg:opacity-80 pb-20 lg:pb-0"
+        "sound-container overflow-auto lg:overflow-hidden top-0 fixed mx-auto h-screen z-20 w-[100%] p-4 opacity-95 lg:opacity-80 pb-20 lg:pb-0"
       }`}
     >
       {soundOpen && (
-        <div className="grid lg:grid-cols-3 items-center lg:justify-center  w-full gap-4 lg:h-full pt-20 pb-10 lg:pt-0 lg:pb-0">
+        <div className="grid lg:grid-cols-3 items-center lg:justify-center  w-full gap-4 lg:h-full pt-20 pb-10 lg:pt-0 lg:pb-0 ">
           {content.sound.map((el: any, index: number) => {
             return (
               <div

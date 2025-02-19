@@ -55,6 +55,11 @@
     opacity: 0.5;
   }
 
+
+  .sublime-bg{
+    background-color: rgb(39 39 42);
+   
+  }
   .sublime {
     p, span{
       color: white !important;
